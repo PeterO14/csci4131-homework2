@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/myStyle.css" rel="stylesheet">
+    <script async defer src="javascript/passwordWidget.js"></script>
+    <script async defer src="javascript/timeWidget.js"></script>
+    <meta charset="UTF-8">
+    <title>Widgets</title>
+  </head>
+  <body class="generalPage">
+    <nav class="navbar">
+      <ul class="navitem">
+        <li class="navlink" >
+          <a class="link" href="myAboutMe.html">About Me</a>
+        </li>
+        <li class="navlink">
+          <a class="link" href="myContacts.html">My Contacts</a>
+        </li>
+        <li class="navlink">
+          <a class="link" href="myWidgets.html">My Widgets</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="widgetsHeader">Checkout My Widgets</h1>
+    <div class="widgetContainer">
+      <div class="widget">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g0rhN8U14dk" 
+                          title="YouTube video player" frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="widget">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+              Europeans phone numbers are all, like, +65 00066 82 31687 0 9865 05 0 0. Come on. Get real.
+          </p>&mdash; willy 🌜💧 (@willystaley) 
+          <a href="https://twitter.com/willystaley/status/1555357047419437056?ref_src=twsrc%5Etfw">August 5, 2022</a>
+        </blockquote> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <div class="widgetContainer">
+      <div class="widget">
+        <div class="widgetHeader">
+          <div class="widgetHeadText">Password Strength Checking with JS</div>
+        </div>
+        <div class="widgetContent">
+          <form class="register">
+            <label for="password" class="registerLabel">Password: </label>
+            <input class="registerInput" name="password" 
+                                         id="password"
+                                         type="password" 
+                                         placeholder="Type Your Password here">
+                                         &nbsp;&nbsp;
+            <span id="pwdresult"></span>  
+          </form>          
+        </div>
+      </div>
+      <div class="widget">
+        <div class="widgetHeader">
+          <div class="widgetHeadText">Time Until The End of The Semester</div>
+        </div>
+        <div class="widgetContent">
+          <span id="timeResult" class="timeLeft"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
